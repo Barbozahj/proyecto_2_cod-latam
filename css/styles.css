@@ -301,10 +301,13 @@ border-right: none;
 .logo{
   margin-left: 50px;
 }
-  .hero{
-    width: 100%;
-   justify-content: center;
+  .hero figure {
+    max-width: 480px;
+    height: 480px;
+    margin-left: 15px;
+    padding: 0;
   }
+
   .hero figure {
     margin: 0;
     padding: 0;
@@ -324,14 +327,14 @@ border-right: none;
   .hero p {
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 65%;
     float:right;
     margin-bottom: 50px;
   }
   .hero h1 {
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 65%;
     float:right;
     margin-top: 70px;
     margin-bottom: 20px;
