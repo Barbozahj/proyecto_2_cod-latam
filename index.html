@@ -13,27 +13,29 @@
 <body>
      <main>
       <header>
-        <img class="logo" src="./img/BMHlogo.png" alt="Logo personal">
-        <div class="topnav" id="myTopnav">
-          <nav>
-            <ul>
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#contacto">Contacto</a></li>
+        <a href="#inicio" class="logo">
+          <img id="logo" src="./img/BMHlogo.png" alt="Logo personal">
+        </a>
+        <nav class="topnav" id="myTopnav">
+            <ul class="menu" id="menu">
+              <li class="menu-item" onclick="activarDesactivarMenu()">
+                <a href="#inicio" class="active">Inicio</a></li>
+              <li class="menu-item" onclick="activarDesactivarMenu()">
+                <a href="#contacto">Contacto</a></li>
             </ul>
           </nav>
-          
-          <a href="#" class="icon" onclick="toggleMenu()">
+          <a href="#" id="icon" onclick="toggleMenu()">
             <i class="fa fa-bars"></i>
           </a>
-        </div>
       </header>
-            <section class="home_section" id="inicio">
+          <section class="home_section" id="inicio">
                   <aside class="hero">
                     <figure>
                       <img src="./img/cv3.png" alt="">
                     </figure>
-                    <h1> Hola Soy<br>Hernan Barboza</h1> 
+                  </aside> 
                     <article class="home">
+                      <h1> Hola! Soy Hernan</h1>
                       <p>Mi pasión por la tecnología me llevó a explorar el mundo de la tecnología. 
                       Desde entonces, he dedicado mi tiempo a formarme de manera autónoma en 2020, 
                       partcipe en diversos programas de capacitación digital como Marketing Digital y 
@@ -51,13 +53,14 @@
                       funcionales en mi trabajo diario. Me emociona la idea de seguir aprendiendo y creciendo en el 
                       campo del desarrollo web, contribuyendo con soluciones efectivas y funcionales en proyectos 
                       futuros.</p>
-                  </aside>
-                    <div class="descarga">
+                      
+                    <button class="descarga" id="btn">
                       <a href="">Descarga mi CV</a>
-                    </div>
-            </section>
+                    </button>
+                  </article>
+          </section>
           <section class="section_talk">
-                <h2 class="talk">Hablemos!</h2>
+                <h2 class="talk" id="contacto">Hablemos!</h2>
                 <p>Durante mi carrera como desarrollador web, he tenido la oportunidad de trabajar con múltiples 
                   herramientas tecnológicas para la creación de páginas web de alta calidad y rendimiento. 
                   Me considero un apasionado de la programación, en especial de la creación de estructuras sólidas en HTML, 
@@ -75,7 +78,7 @@
                   con la cual logro una efectiva implementación de aplicaciones y la construcción de sitios web de manera sencilla y eficiente. 
                   Con estas habilidades, estoy convencido de que puedo aportar al equipo de desarrollo y mejorar el rendimiento y calidad de los proyectos.
                   </p> 
-            <div class="redes" id="contacto">
+            <div class="redes" id="red">
             <ul>
               <li><a href="mailto:barbozahj@gmail.com"><img src="./img/mail.png" alt="Email"></a></li>
               <li><a href="https://github.com/Barbozahj"><img src="./img/github.png" alt="GitHub"></a></li>

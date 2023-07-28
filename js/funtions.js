@@ -1,14 +1,41 @@
 function toggleMenu() {
-  const menu = document.querySelector('.topnav ul');
-  const icon = document.querySelector('.topnav .icon');
-  const logo = document.querySelector('.topnav .logo');
-  if (window.innerWidth <= 600) { // Modo hamburguesa
-    menu.classList.toggle('show-nav');
-    const isMenuShown = menu.classList.contains('show-nav');
-    icon.innerHTML = isMenuShown ? '<i class="fa fa-times"></i>' : '<i class="fa fa-bars"></i>';
-  } else { // Modo desktop
-    menu.classList.remove('show-nav');
-    icon.innerHTML = '<i class="fa fa-bars"></i>';
-    logo.classList.toggle('opposite');
+  let nav = document.querySelector('.topnav ul');
+  let menuIcon = document.querySelector('#icon i');
+  let logo = document.querySelector('.topnav');
+  
+  nav.classList.toggle('show-nav');
+  menuIcon.classList.toggle('fa-bars');
+  menuIcon.classList.toggle('fa-times');
+  
+}
+
+function activarDesactivarMenu() {
+  let menuItems = document.getElementsByClassName("menu-item");
+
+  // Agregar evento onclick a cada elemento del menú
+  for (let i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener("click", function() {
+      // Desactivar la clase 'active' de todos los elementos del menú
+      let elementosMenu = document.getElementsByClassName("menu-item");
+      for (let j = 0; j < elementosMenu.length; j++) {
+        elementosMenu[j].querySelector("a").classList.remove("active");
+      }
+
+      // Activar la clase 'active' para el elemento seleccionado
+      this.querySelector("a").classList.add("active");
+    });
   }
 }
+
+activarDesactivarMenu();
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+
+
